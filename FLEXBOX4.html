@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX BASIC 4</title>
+</head>\
+<style>
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 700px;
+  min-height: 500px;
+  border-top: 5px dashed tomato;
+  border-bottom: 5px dashed tomato;
+}
+.container.flex-start {
+  align-content: flex-end;
+  /* align-items: flex-start */
+}
+.item {
+    
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  padding: 3rem;
+  background: mistyrose;
+  border: 3px solid tomato;
+  color: tomato;
+  margin: 6px;
+}
+.item.item-2,
+.item.item-8,
+.item.item-9{
+  padding: 5rem;
+}
+.item.item-3,
+.item.item-7{
+  padding: 2.5rem;
+}
+.item.item-4,
+.item.item-6{
+  padding: .5rem 2rem 3rem;
+}
+</style>
+<body>
+    <!--
+        -flex-start: - Các phần tử flex được căn chỉnh theo điểm bắt đầu của trục dọc
+        -flex-end: - Các phần tử flex được căn chỉnh đến cuối trục dọc
+        -center: - Các phần tử flex được căn chỉnh xung quanh tâm của trục dọc
+        -space-between: - Các phần tử flex được phân phối đều dọc theo trục dọc, giữa flex-start và flex-end
+        -space-around: - Các phần tử flex được phân phối đều dọc theo trục dọc, nhưng nửa khoảng trống được thêm vào mỗi đầu
+        -stretch: - Các phần tử flex được kéo dài dọc theo trục dọc để lấp đầy hộp chứa flex (đây là mặc định) -->
+    <h1><code>align-content: flex-start</code></h1>
+    <div class="container flex-start">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-5">5</div>
+      <div class="item item-6">6</div>
+      <div class="item item-7">7</div>
+      <div class="item item-8">8</div>
+      <div class="item item-9">9</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX BASIC 2</title>
+</head>
+<style>
+html {
+  background: #fff7f6;
+}
+
+/*-- --*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container.flex-start {
+  justify-content: flex-start;
+}
+.container.flex-end {
+  justify-content: flex-end;
+}
+.container.center {
+  justify-content: center;
+}
+.container.space-between {
+  justify-content: space-between;
+}
+.container.space-around {
+  justify-content: space-around;
+}
+.item {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  padding: 3rem;
+  background: mistyrose;
+  border: 3px solid tomato;
+  color: tomato;
+  margin: 6px;
+}
+</style>
+<body>
+    <h1><code>justify-content: flex-start</code></h1>
+    <h3>- Các phần tử flex được giãn ra theo hướng bắt đầu của trục chính (đây là mặc định)</h3>
+    <div class="container flex-start">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    
+    <h1><code>justify-content: flex-end</code></h1>
+    <h3>- Các phần tử flex được giãn ra ở cuối của trục chính</h3>
+    <div class="container flex-end">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    
+    <h1><code>justify-content: center</code></h1>
+    <h3>- Các phần tử flex được giãn ở xung quanh tâm của trục chính</h3>
+    <div class="container center">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    
+    <h1><code>justify-content: space-between</code></h1>
+    <h3>- Các phần tử flex được phân bổ đều nhau dọc theo trục chính, từ flex-start đến flex-end</h3>
+    <div class="container space-between">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    
+    <h1><code>justify-content: space-around</code></h1>
+    <h3>- Các phần tử flex được phân bổ đều dọc theo trục chính, nhưng nửa khoảng trống được thêm vào mỗi đầu</h3>
+    <div class="container space-around">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+</div>
+</body>
+</html>

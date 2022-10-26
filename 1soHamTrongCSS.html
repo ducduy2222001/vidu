@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        /* calc() tính toán độ dài mình muốn */
+        width: calc(100px*10);
+        height: 100px;
+        background-color: red;
+        padding: 0px;
+    }
+    /* ::after nó jup tạo link chữ mình khỏi ghi*/
+    a::after{
+        /* có content này nữa nghe */
+        content: "("attr(href)")";
+    }
+    .box:hover{
+       background-color: green;
+    }
+    .box:active{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="box"></div>
+
+    <a href="https://www.facebook.com/">Học lập trình</a>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX BASIC 1</title>
+</head>
+<style>
+    html {
+  background: #fff7f6;
+}
+
+/*-- --*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container.row{
+    flex-direction: row;
+}
+.container.row-reverse{
+    flex-direction: row-reverse;
+}
+.container.column{
+    flex-direction: column;
+}
+.container.column-reverse{
+    flex-direction: column-reverse;
+}
+.item {
+  font-size: 2rem;
+  width: 2rem;
+  line-height: 1;
+  text-align: center;
+  padding: 3rem;
+  background: mistyrose;
+  border: 3px solid tomato;
+  color: tomato;
+  margin: 6px;
+}
+</style>
+<body>
+    <div><b style="color: blue;">---Flex-flow Shorthand---</b>
+        <br>- Thuộc tính flex-Flow là một shorthand cho flex-direction và flex-wrap. Chẳng hạn, bạn có thể sử dụng:
+        <br><b>flex-direction: column;</b>
+        <br><b>flex-wrap: wrap;</b>
+        <br><b style="color: blue;">---Ghi tắc---</b>
+        <br><b>flex-flow: column wrap;</b>
+    </div>
+    <h1><code>flex-direction: row</code></h1>
+    <h3>- Trục chính chạy từ trái sang phải (mặc định)</h3>
+    <div class="container row">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    <h1><code>flex-direction: row-reverse</code></h1>
+    <h3>- Trục chính chạy từ phải sang trái</h3>
+    <div class="container row-reverse">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    <h1><code>flex-direction: column</code></h1>
+    <h3>– Trục chính chạy từ trên xuống dưới</h3>
+    <div class="container column">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    <h1><code>flex-direction: column-reverse</code></h1>
+    <h3>– Trục chính chạy từ dưới lên trên</h3>
+    <div class="container column-reverse">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+    </div>
+    
+</body>
+</html>

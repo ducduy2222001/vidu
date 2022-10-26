@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<title>Ví dụ</title>
+	<style>
+        /* CLASS: được sử dụng khi chúng ta phải sử dụng thuộc tính CSS ở nhiều vị trí trong cùng một trang hoặc khác nhau. */
+		.p1-normal {
+			color: red;
+		}
+		/* Lưu ý, các tên class viết liền nhau, không có khoảng trắng */
+		.p1-normal.p2-red {
+			text-align: center;
+		}
+/* ------------------------------------------------------------------------------------------------------------------- */
+       
+        /*ID: được sử dụng khi chúng ta chỉ áp dụng thuộc tính CSS cho một thuộc tính  */
+		#mau{
+			color: red;
+		}
+		#mau.giua{
+			font-size: 200px;
+		}
+	</style>
+	<body>
+        <!-- Class nó thể gọi nhiều Class khác nha -->
+		<p class="p1-normal">Đoạn văn 1</p>
+		<p class="p1-normal">Đoạn văn 2</p>
+		<p class="p1-normal p2-red">Đoạn văn 3</p>
+		<p class="p1-normal p2-red">Đoạn văn 4</p>
+
+		<hr>
+		
+        <!-- Id nó không thể gọi nhiều Id khác nha -->
+		<p id="mau">Đoạn văn 1</p>
+		<p id="mau giua">Đoạn văn 2</p>
+	</body>
+	
+</html>

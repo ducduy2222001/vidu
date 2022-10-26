@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <title>Ví dụ 2</title>
+    <meta charset="UTF-8">
+    <style>
+
+        /* Chọn tất cả thẻ "p" là con của thẻ có class "parent" */
+        .parent p {
+            color: green;
+        }
+    
+        /* Chọn tất cả thẻ có class "children-1" là con của thẻ có class "parent" */
+        .parent .children-1 {
+            color: red;
+        }
+    </style>
+    <body>
+        <!-- Cái này không đổi màu vì nó k có gì cả -->
+        <p class="children-1">Đoạn văn 1 (không parent)</p>
+
+        <!-- Cái này có đổi màu tại nó thuộc class= "parent" -->
+        <div class="parent">
+        <p>Đoạn văn 1 (parent 1)</p>
+        <p class="children-1">Đoạn văn 1 (con của .parent)</p>
+        <p class="children-2">Đoạn văn 2 (con của .parent)</p>
+    </div>
+    </body>
+</html>
